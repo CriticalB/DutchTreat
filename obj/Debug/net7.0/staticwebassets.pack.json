@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\img\\SK-A-2344.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-2344.jpg"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\img\\SK-A-2860.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-2860.jpg"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\img\\SK-A-3262.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3262.jpg"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\img\\SK-A-4050.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4050.jpg"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\img\\SK-A-4674.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4674.jpg"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\img\\SK-A-4691.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4691.jpg"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\img\\SK-A-4885.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4885.jpg"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\img\\SK-A-5033.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-5033.jpg"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\img\\VanGogh.jpg",
+      "PackagePath": "staticwebassets\\img\\VanGogh.jpg"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Training\\DutchTreat\\wwwroot\\lib\\jquery\\package.json",
+      "PackagePath": "staticwebassets\\lib\\jquery\\package.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.DutchTreat.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.DutchTreat.props",
+      "PackagePath": "build\\DutchTreat.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.DutchTreat.props",
+      "PackagePath": "buildMultiTargeting\\DutchTreat.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.DutchTreat.props",
+      "PackagePath": "buildTransitive\\DutchTreat.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
