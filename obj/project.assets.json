@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "jQuery/1.8.0": {
+        "type": "package"
+      },
+      "jQuery.Validation/1.19.5": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.4.4"
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.3": {
         "type": "package",
         "dependencies": {
@@ -201,6 +210,13 @@
           }
         }
       },
+      "Microsoft.jQuery.Unobtrusive.Validation/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.8.0",
+          "jQuery.Validation": "1.8.0.1"
+        }
+      },
       "Microsoft.NETCore.Platforms/2.1.2": {
         "type": "package",
         "compile": {
@@ -289,6 +305,39 @@
     }
   },
   "libraries": {
+    "jQuery/1.8.0": {
+      "sha512": "laDFQRJrIRHT0Z0GVYklMt3bE0iu0MZFJwHwg21kt3SHb7Bj8TdNiM3K+ZdK1DzB8ZxKy8z7NkJvwMas+dmHBw==",
+      "type": "package",
+      "path": "jquery/1.8.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-1.8.0-vsdoc.js",
+        "Content/Scripts/jquery-1.8.0.js",
+        "Content/Scripts/jquery-1.8.0.min.js",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-1.8.0.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.1.8.0.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
+    "jQuery.Validation/1.19.5": {
+      "sha512": "lBHoaszLpKYxiVCWwIoxdqSCrlqnW9jeVMinMQ0uNMFcl3rmY8XyeaerfGLRbkVRUzh/fM3APaKepEezrR5AcA==",
+      "type": "package",
+      "path": "jquery.validation/1.19.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery.validate-vsdoc.js",
+        "Content/Scripts/jquery.validate.js",
+        "Content/Scripts/jquery.validate.min.js",
+        "jquery.validation.1.19.5.nupkg.sha512",
+        "jquery.validation.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.3": {
       "sha512": "OQDxOOJMA7/ZMBv5yYmWYt9zDiwV/OnSleeWhlyvqnhei76ONXbbLRx/4HG7MuoNvZiucBr3b+kcVkO21oYQPA==",
       "type": "package",
@@ -565,6 +614,19 @@
         "version.txt"
       ]
     },
+    "Microsoft.jQuery.Unobtrusive.Validation/4.0.0": {
+      "sha512": "RJ1eBcFIwHINVocYtOlmBQd21jGgHOHGe7TLzmQ9VMRMUqAlJoxyCw1AayBkdExqrEZt0Wz9uaZiDX75NHQmSw==",
+      "type": "package",
+      "path": "microsoft.jquery.unobtrusive.validation/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery.validate.unobtrusive.js",
+        "Content/Scripts/jquery.validate.unobtrusive.min.js",
+        "microsoft.jquery.unobtrusive.validation.4.0.0.nupkg.sha512",
+        "microsoft.jquery.unobtrusive.validation.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/2.1.2": {
       "sha512": "mOJy3M0UN+LUG21dLGMxaWZEP6xYpQEpLuvuEQBaownaX4YuhH6NmNUlN9si+vNkAS6dwJ//N1O4DmLf2CikVg==",
       "type": "package",
@@ -760,7 +822,9 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.3"
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 5.0.3",
+      "Microsoft.jQuery.Unobtrusive.Validation >= 4.0.0",
+      "jQuery.Validation >= 1.19.5"
     ]
   },
   "packageFolders": {
@@ -811,6 +875,14 @@
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
             "target": "Package",
             "version": "[5.0.3, )"
+          },
+          "Microsoft.jQuery.Unobtrusive.Validation": {
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
+          "jQuery.Validation": {
+            "target": "Package",
+            "version": "[1.19.5, )"
           }
         },
         "imports": [

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation;
+using DutchTreat.Services;
 
 namespace DutchTreat
 {
@@ -15,6 +16,9 @@ namespace DutchTreat
     {
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddTransient<IMailService, NullMailService>();
+
             services.AddControllersWithViews()
                 .AddRazorRuntimeCompilation();
             services.AddRazorPages();
