@@ -26,8 +26,15 @@ using DutchTreat.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Training\DutchTreat\Views\_ViewImports.cshtml"
+using DutchTreat.Data.Entities;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d4808984669cecd89a04e2866ef072b9c144c97f", @"/Views/Pages/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7515333d7411491e608332006a28edb4e0874f86", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9defb350681c0cf185a4b4f3343bbe60203b682c", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Pages_Error : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     #nullable disable

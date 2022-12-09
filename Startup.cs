@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation;
 using DutchTreat.Services;
+using DutchTreat.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace DutchTreat
 {
@@ -16,8 +18,15 @@ namespace DutchTreat
     {
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<DutchContext>(cfg =>
+            {
+                cfg.UseSqlServer();
+            });
+                
+            services.AddTransient<DutchSeeder>();
             services.AddTransient<IMailService, NullMailService>();
+
+            services.AddScoped<IDutchRepository, DutchRepository>();
 
             services.AddControllersWithViews()
                 .AddRazorRuntimeCompilation();
