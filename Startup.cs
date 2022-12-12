@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation;
 using DutchTreat.Services;
 using DutchTreat.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.CodeAnalysis.FlowAnalysis;
+using Newtonsoft.Json;
 
 namespace DutchTreat
 {
@@ -29,7 +31,8 @@ namespace DutchTreat
             services.AddScoped<IDutchRepository, DutchRepository>();
 
             services.AddControllersWithViews()
-                .AddRazorRuntimeCompilation();
+                .AddRazorRuntimeCompilation()
+                .AddNewtonsoftJson(cfg => cfg.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
             services.AddRazorPages();
         }
     
