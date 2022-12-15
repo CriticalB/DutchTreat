@@ -7,6 +7,7 @@ using System;
 namespace DutchTreat.Controllers
 {
     [Route("api/[Controller]")]
+    [ApiController]
     public class OrdersController : Controller
     {
         private readonly IDutchRepository repository;
@@ -32,15 +33,21 @@ namespace DutchTreat.Controllers
             }
         }
 
-        [HttpGet("{id:int")]
+        [HttpGet("{id:int}")]
         public IActionResult Get(int id)
         {
             try
             {
                 var order = this.repository.GetOrderById(id);
 
-                if (order != null) return Ok(order);
-                else return NotFound();
+                if (order != null)
+                {
+                    return Ok(order);
+                }
+                else
+                {
+                    return NotFound();
+                }   
             }
             catch (Exception ex)
             {
@@ -50,11 +57,24 @@ namespace DutchTreat.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(Order model)
+        public IActionResult Post([FromBody]Order model)
         {
-            //add it to db
-            return Ok();
-        }
+            try
+            {
+                this.repository.AddEntity(model);
+                if (this.repository.SaveAll())
+                {
+                    return Created($"api/orders/{model.Id}", model);
+                }
 
+            }
+            //add it to db
+            catch (Exception ex)
+            {
+                this.logger.LogError($"Failed save a new order: {ex}");
+            }
+
+            return BadRequest("Failed to save new order");
+        }
     }
 }

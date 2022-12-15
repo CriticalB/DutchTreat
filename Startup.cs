@@ -58,7 +58,7 @@ namespace DutchTreat
 
                 cfg.MapControllerRoute("Default", 
                 "/{controller}/{action}/{id?}",
-                new { controller = "App", action = "Index"});
+                new { controller = "App", action = "Index"} );
             });        
         }
     }
