@@ -13,6 +13,7 @@ using DutchTreat.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.CodeAnalysis.FlowAnalysis;
 using Newtonsoft.Json;
+using System.Reflection;
 
 namespace DutchTreat
 {
@@ -26,6 +27,9 @@ namespace DutchTreat
             });
                 
             services.AddTransient<DutchSeeder>();
+
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
             services.AddTransient<IMailService, NullMailService>();
 
             services.AddScoped<IDutchRepository, DutchRepository>();
